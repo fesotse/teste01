@@ -1,65 +1,94 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" media="screen" type="text/css" href="style.css"/>
-    </head>
-    <body>
-        <table style="width: 800px;">
-            <tr>
-                <th>Company</th>
-                <td>Contact</td>
-                <td>Country</td>
-              </tr>
-              <tr style="width: 60%;">
-                <th>Alfreds Futterkiste</th>
-                <td>Maria Anders</td>
-                <td>Germany</td>
-              </tr>
-              <tr>
-                <th>Centro comercial Moctezuma</th>
-                <td>Francisco Chang</td>
-                <td>Mexico</td>
-              </tr>  
-        </table>
-        <form>
-          <!--Ici c'est un type de formulaire à entrée nature=texte et date-->  
-          <label for="fname">First name:</label>
-          <input type="text" id="fname" name="fname">
-          <label for="lname">Last name:</label>
-          <input type="text" id="lname" name="lname">
-          <label for="bday">Birthday</label>
-          <input type='date' id="bday" name="bday">
-          
-          <!--Ici nous avons un choix unique parmi les proposées, pour pouvoir tout sélectionner il suffit 
-          d'enlever le type name="Gender"-->
-          <p>Gender:</p>
-          <input type="radio" id="male" name="Gender" value="Male">
-          <label for="male">Male</label><br>
-          <input type="radio" id="female" name="Gender" value="Female">
-          <label for="female">Female</label><br>
-          <input type="radio" id="non_binare" name="Gender" value="Non_binare">
-          <label for="non_binare">Non_binare</label><br>
-            
-          <!-- Ici ce sera un choix multiple-->
-          <p>Degree(s)</p>
-          <input type="checkbox" id="CEPE" value="CEPE">
-          <label for="CEPE">I have CEPE</label>
-          <input type="checkbox" id="BEPC" value="BEPC">
-          <label for="BEPC">I have BEPC</label>
-          <input type="checkbox" id="BAC" value="BAC">
-          <label for="BAC">I have BAC</label>
-          <input type="checkbox" id="BAC+" value="BAC+">
-          <label for="BAC+">I have BAC+</label>
-          <input type="checkbox" id="CAP" value="CAP">
-          <label for="CAP">I have CAP</label>
-          
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- insertion du fichier css-->
+    <link href="style.css" rel="stylesheet">
+    
+    <!--importation du font de police courgette venant du Sourc sans pro-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
 
+    <!--Font awsome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    
+    <title>MyUnicorn</title>
+</head>
+<body>
+    <!--Mise en place des differentes compartiments-->
+    <!--Entête-->
+    <header>
+        <div class="contenaire">  
+            <div class="navbar_MU">
+                <div class="navbar_i"><span>MyUnicorn</span></div>
+                <div class="navbar_LP"><span class="separation"><a style="text-decoration:none" href="#1">LE PRINCIPE</a></span></div>
+                <div class="navbar_NL"><span><a style="text-decoration:none" href="#2">NOS LICORNES</a></span></div>
+                <div class="navbar_NT"><span><a style="text-decoration:none" href="#3">NOUS TROUVER</a></span></div>
+            </div>
+        </div>
+    </header>
+    <!-- Titre-->
+    <div class="tete">
+        <div class="subdiv">
+            <div class="h_1"><h1> Un jour, une licorne </h1></div>
+        </div>
+    
+    </div>
+    <!--main-->
+    <main>
+        <section>
+            <!--Insertion de l'étoile-->
+            <h2 id="1"><i class="fa fa-star-o"></i>Le principe</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dictum dapibus ante, eu aliquam ante euismod eleifend. Ut malesuada augue ut luctus pellentesque. Aenean id varius ipsum. Nunc malesuada ex ut ipsum interdum vestibulum. Integer facilisis finibus orci, sit amet pretium diam placerat vitae. Nunc auctor tincidunt mollis. Nullam quis turpis sed lorem elementum semper eget semper risus. In nec mauris aliquam, congue metus euismod, cursus leo. Vivamus laoreet commodo leo, ut cursus justo blandit in. Aenean pretium mi a auctor pulvinar. Mauris sodales sollicitudin sodales. Sed mollis sed lectus id facilisis. Quisque pharetra a purus eget porttitor. Proin rhoncus risus non mauris iaculis sodales. Pellentesque euismod dui erat, non sodales ipsum sollicitudin sed.</p>
 
+            <p>Donec nisi eros, luctus id pretium eget, consequat elementum risus. Fusce eleifend lacinia orci eu iaculis. Vestibulum vestibulum justo quis commodo congue. Aliquam purus leo, dictum in nisl at, pellentesque bibendum mi. Nulla convallis mi eget nisl convallis dictum. Vestibulum a massa lacus. Aenean quis enim diam.</p>
+            <br>
+        </section>
+        <section>
+            <h2 id="2"><i class="fa fa-star-o"></i>Nos licornes</h2>
+            <div class="photo" style="width: fit-content;">
+                <figure><img src="img/unicorns/photo1.jpg" ><figcaption >Lulu Confetty</figcaption></figure>
+                <figure><img src="img/unicorns/photo2.jpg"> <figcaption> Lapillon Magik</figcaption></figure>
+                <figure><img src="img/unicorns/photo3.jpg"><figcaption> El Ninjacorn</figcaption></figure>
+                <figure><img src="img/unicorns/photo4.jpg"><figcaption>Sweety Candy</figcaption></figure>
+            </div>
+        </section>
+        <section>
+            <h2 id="3"><i class="fa fa-star-o"></i>Nous trouver</h2>
+            <div class="cartetotal">
+            <!---Insertion de la carte avec position-->
+                <div class="carte">   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.5352920117766!2d47.52404341544454!3d-18.907686212215822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21f07e00bfe681a5%3A0x4c1b3b6f62c45fa2!2sAnalakely%20Market!5e0!3m2!1sfr!2smg!4v1644389951717!5m2!1sfr!2smg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="texte">
+                    <div class="information">
+                        <h4>Notre élevage de licornes est situé au:</h4>
+                        <p>Analakely Market<br>
+                        Arabe Rahezavana, Antananarivo, Madagascar<br>
+                        01.22.45.67.90</p>
+                        <h4>Newsletter</h4>
+                        <p>Abonnez-vous simplement à notre newsletter mensuelle !</p>
+                        <form action="newsletter.php" method="post">
+                            <input type="email" placeholder="votre@email.fr" style="opacity: 50%; height: 25px;margin-bottom: 5px;" ><br>
+                        <button style="background-color: #C55394;color: #FFF; border: solid 1px #E577B5;margin: 5px 0 0 0;border-radius: 2px;height: 25px;
+                        width: 70px;" >Valider</button>
+                        </form>
 
+                    </div>
+                </div>
+            </div> 
+        </section>
 
+    </main>
+       
+    <!--bas de page-->
+    <footer>
+<span>2016 &copy; WebForce3</span>
+    </footer>
 
-
-        </form>
-    </body>
+    
+</body>
 </html>
